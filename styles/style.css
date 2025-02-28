@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+:root {
+  --cor-primaria: #1c3f43;
+  --cor-secundaria: #abc0c3;
+  --cor-terciaria: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: #abc0c3;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+strong {
+  color: #abc0c3;
+}
+
+.apresentacao {
+  padding: 2.5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.apresentacao__conteudo {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.apresentacao__conteudo_titulo {
+  font-size: 2.25rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.apresentacao__conteudo_texto {
+  font-size: 1.5rem;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  color: var(--cor-secundaria);
+}
+
+.apresentacao__links_subtitulo {
+  font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  background-color: #41696e;
+  border: 2px solid var(--cor-secundaria);
+  width: 45%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.apresentacao__links__navegacao:hover {
+  background-color: #e9eef03f;
+}
+
+.rodape {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.81rem;
+  padding: 23px;
+  text-align: center;
+  color: var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
+}
+
+.image-renan {
+  width: 30%;
+  height: 35%;
+}
+
+.icone-instagram {
+  width: 8%;
+  height: 8%;
+}
+
+.icone-github {
+  width: 8%;
+  height: 8%;
+}
+
+.icone-linkedin {
+  width: 8%;
+  height: 8%;
+}
+
+@media (max-width: 960px) {
+  .cabecalho {
+    padding: 10%;
+  }
+  .cabecalho__menu {
+    justify-content: center;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .apresentacao__conteudo {
+    width: auto;
+  }
+}
